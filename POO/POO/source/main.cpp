@@ -1,5 +1,6 @@
 
 #include "Prerequisites.h"
+#include "Inventoryr.h"
 //Crear clase character
 class
     character {
@@ -30,47 +31,16 @@ setHealt(int health) {
   protected:
       int m_health;
   };
-class
-    inventary {
-public:
-    void Object() {
-        std::cout << "Quiere agregar objeto al inventario?" << std::endl;
-        std::cout << "1. Si" << std::endl;
-        std::cout << "2. No" << std::endl;
-        int option;
-        std::cin >> option;
-        if (option == 1) {
-            AddObject(option);
-        }
-        else {
-            NoObject(option);
-        }
-      
-    }
-    void AddObject(int option) {
-            std::cout << "Objeto agregado" << std::endl;
-        
-        NoObject(option);
-    }
-        void NoObject(int option) {
-            switch (option)
-            {
-                case 1:
-                std::cout << "Menos un espacio de su inventario" << std::endl;
-				break;
-                case 2:
-					std::cout << " ningun objeto insertado, Bolsa vacia" << std::endl;
-            default:
-                break;
-            }
-            
-        }
-    };
-
-
     //this funtion is in charge of being the entry point of the app.
     int
         main() {
+        Inventory inventory;
+		inventory.addItem("Pocion de vida", 3);
+		inventory.addItem("Espada", 1);
+		inventory.addItem("Escudo", 1);
+
+		inventory.useItem("Pocion de vida", 1);
+		inventory.showInventory();
         character pepe(150);
         pepe.getHealth();
         std::cout << pepe.getHealth() << std::endl;
@@ -81,8 +51,7 @@ public:
             std::cout << "El pepe, murio" << std::endl;
             pepe.rebirth();
         }
-		inventary inventario;
-		inventario.Object();
         std::cout << "Hello world" << std::endl;
+		std::cin.get();
         return 0;
     }
