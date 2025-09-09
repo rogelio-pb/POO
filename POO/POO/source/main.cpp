@@ -1,6 +1,7 @@
 
 #include "Prerequisites.h"
 #include "Inventoryr.h"
+#include "rectangulo.h"
 //Crear clase character
 class
     character {
@@ -51,7 +52,15 @@ setHealt(int health) {
             std::cout << "El pepe, murio" << std::endl;
             pepe.rebirth();
         }
-        std::cout << "Hello world" << std::endl;
-		std::cin.get();
+        Rectangulo rect;
+         rect.setAltura(5.0);
+         rect.setBase(3.0);
+         std::cout << "Area: " << rect.getArea() << std::endl;
+		 std::cout << "Perimetro: " << rect.getPerimetro() << std::endl;
+         Fecha fecha;
+         fecha.getFecha();
+         fecha.toString();
+		 std::cout << fecha.toString() << std::endl;
+      
         return 0;
     }
