@@ -2,6 +2,7 @@
 #include "Prerequisites.h"
 #include "Inventoryr.h"
 #include "rectangulo.h"
+#include "Circulo.h"
 //Crear clase character
 class
     character {
@@ -61,6 +62,11 @@ setHealt(int health) {
          fecha.getFecha();
          fecha.toString();
 		 std::cout << fecha.toString() << std::endl;
+
+         Circulo miCirculo;
+         miCirculo.setRadio(5);
+		 std::cout << "Area: " << miCirculo.getArea() << std::endl;
+         std::cout << "Perimetro " << miCirculo.getPerimetro() << std::endl;
       
         return 0;
     }
