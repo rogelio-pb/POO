@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Circulo.h" />
+    <ClInclude Include="include\Estudiante.h" />
     <ClInclude Include="include\Inventoryr.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
