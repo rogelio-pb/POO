@@ -4,6 +4,7 @@
 #include "rectangulo.h"
 #include "Circulo.h"
 #include "Estudiante.h"
+#include"CuentaBancaria.h"
 //Crear clase character
 class
     character {
@@ -77,7 +78,20 @@ setHealt(int health) {
         estudiantes[4].setEstudiante("Pedro", 23);
         for (int i = 0; i < 5; i++) {
             estudiantes[i].mostrarEstudiante();
+
         }
+		std:: cout << "" << std::endl;
+        CuentaBancaria cuenta;
+		cuenta.consultarSaldo();
+        cuenta.propietario = "Juan Perez";
+		std::cout << "Propietario: " << cuenta.propietario << std::endl;
+		cuenta.aplicarInteresPublico(5.0);
+		cuenta.mostrarDatosCuenta();
+		cuenta.Transaccion(-100);
+
+        
+
+
       
         return 0;
     }
