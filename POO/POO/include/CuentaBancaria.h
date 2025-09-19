@@ -1,58 +1,46 @@
 #pragma once
-#include"Prerequisites.h"
+#include "Prerequisites.h"
 
 class
 	CuentaBancaria {
+public:
+	CuentaBancaria() = default;
+	CuentaBancaria(std::string propietario, int numCuenta, double saldoInicial) :
+		m_propietario(propietario), m_numeroCuenta(numCuenta), m_saldo(saldoInicial) {
+	}
+	~CuentaBancaria() = default;
+
+	double&
+		consultarSaldo() {
+		std::cout << "Saldo actual de " << m_propietario
+			<< " (Cuenta " << m_numeroCuenta << "): " << m_saldo << std::endl;
+		return m_saldo;
+	}
+
+	void
+		mostrarInteresCalculado() {
+		double tasaInteres = 5.0; // Tasa de interes del 5%
+		double interes = calcularInteres(tasaInteres);
+		std::cout << "Interes calculado al " << tasaInteres << "% sobre el saldo de "
+			<< m_saldo << " es: " << interes << std::endl;
+	}
+
+	int
+		getNumeroCuenta() const {
+		return m_numeroCuenta;
+	}
+
 private:
-	double saldo;
+	double
+		calcularInteres(double tasaInteres) {
+		return m_saldo * tasaInteres / 100.0;
+	}
 
 public:
-	CuentaBancaria()=default;
-		~CuentaBancaria() = default;
-		std::string propietario;
-
-     protected:
-			int numeroCuenta=123;
-
-public:
-	void consultarSaldo() {
-		
-		std::cout << "Ingrese el saldo inicial: $"<< std::endl;
-		std::cin >> saldo;
-				std::cout << "Saldo actual: $" << saldo << std::endl;	
-			}
-	void aplicarInteresPublico(double tasa) {
-		calcularInteres(tasa);
-	}
-	void mostrarDatosCuenta() const {
-		std::cout << "Propietario: " << propietario << std::endl;
-		std::cout << "Número de cuenta: " << numeroCuenta << std::endl;
-		std::cout << "Saldo: $" << saldo << std::endl;
-	}
-	void Transaccion(double monto) {
-		realizarTransaccion(monto);
-	}
+	std::string m_propietario;
+protected:
+	int m_numeroCuenta;
 private:
-	void calcularInteres(double tasaInteres) {
-		double interes = saldo * tasaInteres / 100;
-		saldo += interes;
-		std::cout << "Interes calculado: $" << interes << std::endl;
-	}
-	protected:
-		void realizarTransaccion(double monto) {
-			if (monto > 0) {
-				saldo += monto;
-				std::cout << "Depósito realizado: $" << monto << std::endl;
-				std::cout << "Nuevo saldo: $" << saldo << std::endl;
-			}
-			else if (monto < 0 && saldo + monto >= 0) {
-				saldo += monto;
-				std::cout << "Retiro realizado: $" << -monto << std::endl;
-				std::cout << "Nuevo saldo: $" << saldo << std::endl;
-			}
-			else {
-				std::cout << "Transacción inválida o fondos insuficientes." << std::endl;
-			}
-		}
-	
+	double m_saldo;
+
 };

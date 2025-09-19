@@ -5,6 +5,8 @@
 #include "Circulo.h"
 #include "Estudiante.h"
 #include"CuentaBancaria.h"
+#include"UsuarioBanco.h"
+#include"Banco.h"
 //Crear clase character
 class
     character {
@@ -80,18 +82,25 @@ setHealt(int health) {
             estudiantes[i].mostrarEstudiante();
 
         }
-		std:: cout << "" << std::endl;
-        CuentaBancaria cuenta;
-		cuenta.consultarSaldo();
-        cuenta.propietario = "Juan Perez";
-		std::cout << "Propietario: " << cuenta.propietario << std::endl;
-		cuenta.aplicarInteresPublico(5.0);
-		cuenta.mostrarDatosCuenta();
-		cuenta.Transaccion(-100);
+        Banco Santander;
+        UsuarioBancario Ariana = Santander.nuevoUsuario(CuentaBancaria("Ariana", 0001, 5000.0));
+        UsuarioBancario Ana = Santander.nuevoUsuario(CuentaBancaria("Ana", 0002, 3000.0));
 
-        
+
+        std::cout << "Antes de la transferencia:" << std::endl;
+
+
+        std::cout << "Realizando la transferencia:" << std::endl;
+        Santander.realizarTransferencia(Ana, Ariana, 1500.0, 1709);
+        Santander.realizarCompra(Ariana, "Shampoo", 245.0, 1809); // Esto debe de dar cashBack (Compras en comercios = 1%)
+
+        std::cout << "Despues de la transferencia:" << std::endl;
+
+
+        std::cin.get();
+        return 0;
+    }
 
 
       
-        return 0;
-    }
+    
