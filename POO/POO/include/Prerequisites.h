@@ -25,4 +25,13 @@ struct Fecha {
 	std::string toString() const {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
 	}
+
+
+};
+enum
+	COMPRAS {
+	TELECOMUNICACIONES = 1,
+	RESTAURANTES = 2, 
+	FARMACIAS = 3, 
+	SUPERMERCADO = 4
 };
