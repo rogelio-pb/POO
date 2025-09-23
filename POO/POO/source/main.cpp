@@ -1,4 +1,3 @@
-
 #include "Prerequisites.h"
 #include "Inventoryr.h"
 #include "rectangulo.h"
@@ -7,6 +6,7 @@
 #include"CuentaBancaria.h"
 #include"UsuarioBanco.h"
 #include"Banco.h"
+#include"Productos.h"
 //Crear clase character
 class
     character {
@@ -82,6 +82,7 @@ setHealt(int health) {
             estudiantes[i].mostrarEstudiante();
 
         }
+
         Banco Santander;
         UsuarioBancario Ariana = Santander.nuevoUsuario(CuentaBancaria("Ariana", 0001, 5000.0));
         UsuarioBancario Ana = Santander.nuevoUsuario(CuentaBancaria("Ana", 0002, 3000.0));
@@ -96,10 +97,32 @@ setHealt(int health) {
 
         std::cout << "Despues de la transferencia:" << std::endl;
 
+		std::cout << " " << std::endl;
+
+		std::cout << "Mostrando productos:" << std::endl;
+
+	
+        Productos producto1;
+        producto1.descripcion = "Agua pura y refrescante";
+        producto1.modelo = "Natural";
+        producto1.costo = 10;
+		producto1.consumible = "Si";
+		producto1.fechaCaducidad = " 12/12/2025";
+		producto1.codigoProducto = 001;
+        producto1.setNombreP(AGUA);
+        producto1.setMarca(COCA_COLA);
+        producto1.mostrarProducto();
+        producto1.mostrarInfoP();
+        producto1.comprarProducto(Ariana, 2); // Comprar 2 unidades del producto
+		producto1.cashBackProducto(Ariana, BEBIDAS, producto1.costo * 2); // Aplicar cashBack por la compra
 
         std::cin.get();
+
+
+
         return 0;
     }
+
 
 
       

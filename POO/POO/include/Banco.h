@@ -16,16 +16,16 @@ public://Constructor y destructor por defecto
 	double cashBack(COMPRAS Comercio, double _monto) {//Metodo para calcular el cashBack
 		double retorno = 0.0;		// Inicializamos el retorno en 0.0
 		switch (Comercio) { //es el switch para determinar el tipo de comercio
-	case TELECOMUNICACIONES:
+	case BEBIDAS:
 		retorno = _monto * 0.01; // 1% de cashback
 		break;
-	case RESTAURANTES:
+	case ALIMENTOS:
 		retorno = _monto * 0.02; // 2% de cashback
 		break;
 	case FARMACIAS:
 		retorno = _monto * 0.03; // 3% de cashback
 		break;
-	case SUPERMERCADO:
+	case CARNESF:
 		retorno = _monto * 0.01; // 1% de cashback
 		break;
 	default:
@@ -60,8 +60,9 @@ public://Constructor y destructor por defecto
 				<< cuenta.getCuenta().getNumeroCuenta()
 				<< ". Numero de Referencia: " << noRef << std::endl;
 
-			cuenta.setCashBack(cashBack(SUPERMERCADO, monto));//aqui se aplica el cashBack dependiendo del tipo de comercio
-			std::cout << "Cashback aplicado: " << cashBack(SUPERMERCADO, monto) << std::endl;
+			cuenta.setCashBack(cashBack(CARNESF, monto));//aqui se aplica el cashBack dependiendo del tipo de comercio
+
+			std::cout << "Cashback aplicado: " << cashBack(CARNESF, monto) << std::endl;
 		}
 		else {
 			std::cout << "Error en la compra: monto invalido o saldo insuficiente." << std::endl;
