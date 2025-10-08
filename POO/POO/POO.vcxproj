@@ -169,7 +169,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\main2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Banco.h" />
@@ -180,6 +180,8 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Productos.h" />
+    <ClInclude Include="include\ProgrammingParentton\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />
     <ClInclude Include="include\rectangulo.h" />
     <ClInclude Include="include\UsuarioBanco.h" />
   </ItemGroup>
