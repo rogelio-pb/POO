@@ -180,8 +180,10 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Productos.h" />
+    <ClInclude Include="include\ProgrammingParentton\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingParentton\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />
+    <ClInclude Include="include\ProgrammingParentton\Vehiculo.h" />
     <ClInclude Include="include\rectangulo.h" />
     <ClInclude Include="include\UsuarioBanco.h" />
   </ItemGroup>
