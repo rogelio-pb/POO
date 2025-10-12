@@ -3,6 +3,8 @@
 #include "ProgrammingParentton/RegistroActividad.h"
 #include "ProgrammingParentton/FactoryMethod.h"
 #include "ProgrammingParentton/Vehiculo.h"
+#include "ProgrammingParentton/AbstractFactory/FabricaConcreta.h"
+#include "ProgrammingParentton/AbstractFactory/FactorialMuRusticos.h"
 //inicializamos la instancia estatic del singleton
 MiSingleton* MiSingleton::instance = nullptr;
 
@@ -56,6 +58,28 @@ int main() {
 	bici->descripcion();// Soy una bicicleta
 	delete bici;
 	delete fabricaBicicletas;
+
+	fabricaAbstracta* fabrica = new FabricaConcreta();
+	productoA* prodA = fabrica->crearProductoA();
+	productoB* prodB = fabrica->crearProductoB();
+
+	prodA->operacionA();
+	prodB->operacionB();
+	delete fabrica;
+	delete prodA;
+	delete prodB;
+
+	FactoriaMuebles* fabricaMuebles = new FactorialMuRusticos();//instancia de la fabrica concreta de muebles rusticos
+	Mueble* mesa = fabricaMuebles->crearMesa();//metodo para crear una mesa rustica
+	Mueble* silla = fabricaMuebles->crearSilla();//metodo para crear una silla rustica
+
+	mesa->descripcion();//descripcion de la mesa
+	mesa->color();//color de la mesa
+	silla->descripcion();//descripcion de la silla
+	silla->color();//color de la silla
+	delete fabricaMuebles;//eliminamos la fabrica de muebles 
+	delete mesa;//eliminamos la mesa para evitar fugas de memoria
+	delete silla;//eliminamos la silla para evitar fugas de memoria
 
 
 	return 0;

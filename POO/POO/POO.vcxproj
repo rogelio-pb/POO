@@ -170,6 +170,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp" />
+    <ClCompile Include="source\ProgrammingParentton\AbstractFactory\ProductoA1.cpp" />
+    <ClCompile Include="source\ProgrammingParentton\AbstractFactory\ProductoB1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Banco.h" />
@@ -180,6 +182,18 @@
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Productos.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\fabricaAbstracta.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FabricaConcreta.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactorialMuModernos.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactorialMuRusticos.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactoriaMuebles.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Mesa.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Mueble.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoA.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\productoA1.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB1.h" />
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Silla.h" />
     <ClInclude Include="include\ProgrammingParentton\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingParentton\MiSingleton.h" />
     <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />

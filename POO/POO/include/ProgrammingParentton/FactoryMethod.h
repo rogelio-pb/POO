@@ -14,6 +14,7 @@ class Factory { //sirve para crear productos
 	virtual ~Factory() = default;// Destructor virtual por defecto
 };
 
+
 //Productos concretos
 class ProductoA : public Producto {// Clase concreta que implementa Producto 
 	public:

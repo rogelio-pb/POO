@@ -16,10 +16,25 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns">
       <UniqueIdentifier>{69fe6249-e4df-4201-9616-5932cadd7002}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{222c3b6c-07a5-4ca3-b3a1-81f7a60f32b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgrammingParentton">
+      <UniqueIdentifier>{411a9f78-b4e8-4516-a95f-6794ca4e2617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\ProgrammingParentton\AbstractFactory">
+      <UniqueIdentifier>{547a660c-c984-4d0d-a73a-a98de0134834}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingParentton\AbstractFactory\ProductoA1.cpp">
+      <Filter>Archivos de origen\ProgrammingParentton\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingParentton\AbstractFactory\ProductoB1.cpp">
+      <Filter>Archivos de origen\ProgrammingParentton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +79,42 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\Vehiculo.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\fabricaAbstracta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\productoA1.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB1.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FabricaConcreta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Mueble.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Silla.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Mesa.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactoriaMuebles.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactorialMuRusticos.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\AbstractFactory\FactorialMuModernos.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
