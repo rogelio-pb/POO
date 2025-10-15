@@ -2,7 +2,7 @@
 
 class Producto;
 
-class
+class// Clase abstracta Builder
 	Builder {
 public:
 	Builder() = default;

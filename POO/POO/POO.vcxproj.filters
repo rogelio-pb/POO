@@ -45,6 +45,12 @@
     <ClCompile Include="source\ProgrammingParentton\Builder\BuilderConcreto.cpp">
       <Filter>Archivos de origen\ProgrammingParentton\Builder</Filter>
     </ClCompile>
+    <ClCompile Include="source\ProgrammingParentton\Builder\ConstructorPizzaHauwaiana.cpp">
+      <Filter>Archivos de origen\ProgrammingParentton\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingParentton\Builder\ConstructorPizzaVegetariana.cpp">
+      <Filter>Archivos de origen\ProgrammingParentton\Builder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -135,6 +141,21 @@
       <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\Builder\Director.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Builder\Pizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Builder\ConstructorPizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Builder\ConstructorPizzaHauwaiana.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Builder\ConstructorPizzaVegetariana.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Builder\DirectorPizza.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
     </ClInclude>
   </ItemGroup>

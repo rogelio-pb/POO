@@ -2,7 +2,7 @@
 #include "ProgrammingParentton/Builder/Builder.h"
 
 class
-	Director {
+	Director {// Clase que dirige la construccion del producto
 public:
 	Director(Builder* builder) : builder(builder) {}// Constructor que recibe un Builder
 	~Director() = default;// Destructor por defecto
