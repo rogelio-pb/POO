@@ -197,6 +197,13 @@
     <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB.h" />
     <ClInclude Include="include\ProgrammingParentton\AbstractFactory\ProductoB1.h" />
     <ClInclude Include="include\ProgrammingParentton\AbstractFactory\Silla.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\Adaptador.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\Circulo.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\CirculoAdapter.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\CuadroAdapter.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazDibujable.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazNueva.h" />
+    <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazVieja.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\ConstructorPizza.h" />
