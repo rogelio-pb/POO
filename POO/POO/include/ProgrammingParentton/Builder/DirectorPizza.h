@@ -4,7 +4,7 @@
 class
 	DirectorPizza {// Clase que dirige la construccion del producto
 public:
-	DirectorPizza(ConstructorPizza* constructor) : constructor(constructor) {}// Constructor que recibe un Builder
+	DirectorPizza(ConstructorPizza* constructor) : constructor(constructor) {}// agarra el constructor de clase abstracta BuilderPizza que se llama constructor 
 	~DirectorPizza() = default;// Destructor por defecto
 	void construct() {// Metodo que construye el producto
 		if (constructor) {

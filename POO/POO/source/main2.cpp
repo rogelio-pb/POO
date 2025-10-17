@@ -4,6 +4,11 @@
 #include "ProgrammingParentton/Builder/ConstructorPizzaHauwaiana.h"
 #include "ProgrammingParentton/Builder/ConstructorPizzaVegetariana.h"
 #include "ProgrammingParentton/Builder/DirectorPizza.h"
+#include "ProgrammingParentton/Prototype/Prototype.h"
+#include "ProgrammingParentton/Prototype/PrototypeConcreto.h"
+#include "ProgrammingParentton/Prototype/Documento.h"
+#include "ProgrammingParentton/Prototype/DocumentoPrototype.h"
+#include "ProgrammingParentton/Prototype/DocumentoTexto.h"
 
 
 
@@ -47,6 +52,39 @@ int main() {
 	delete pizzaVegetariana;//eliminamos el producto para evitar fugas de memoria
 	delete directorPizzaVegetariana;//eliminamos el director para evitar fugas de memoria
 	delete constructorPizzas;//eliminamos el builder para evitar fugas de memoria
+	std::cout << " " << std::endl;
+
+	Prototype* original = new PrototypeConcreto();//creamos una instancia del objeto original
+	original->config("original");//configuramos el objeto original
+		
+	//clonamos el objeto original
+	Prototype* clone = original->clone();
+	clone->config("clon");//configuramos el objeto clon
+	//mostramos la informacion del objeto original y del clon
+	original->info();
+	clone->info();
+	//eliminamos los objetos para evitar fugas de memoria
+	delete original;
+	delete clone;
+	std::cout << " " << std::endl;
+
+	DocumentoPrototype* PrototipoTexto = new DocumentoTexto();//creamos una instancia del objeto original
+	PrototipoTexto->config("Documento de texto original");//configuramos el objeto original
+
+	//clonamos el objeto original
+	Documento* cloneTexto = PrototipoTexto->clone();
+	cloneTexto->config("Documento de texto clonado");//configuramos el objeto clon
+
+
+	PrototipoTexto->config("Documento de texto original modificado");
+
+	//mostramos la informacion del objeto original y del clon
+	PrototipoTexto->clone()->info();
+	cloneTexto->info();
+	//eliminamos los objetos para evitar fugas de memoria
+	delete PrototipoTexto;
+	delete cloneTexto;
+	std::cout << " " << std::endl;
 
 
 

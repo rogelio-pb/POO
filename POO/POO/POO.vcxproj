@@ -208,6 +208,11 @@
     <ClInclude Include="include\ProgrammingParentton\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingParentton\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingParentton\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingParentton\Prototype\Documento.h" />
+    <ClInclude Include="include\ProgrammingParentton\Prototype\DocumentoPrototype.h" />
+    <ClInclude Include="include\ProgrammingParentton\Prototype\DocumentoTexto.h" />
+    <ClInclude Include="include\ProgrammingParentton\Prototype\Prototype.h" />
+    <ClInclude Include="include\ProgrammingParentton\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />
     <ClInclude Include="include\ProgrammingParentton\Vehiculo.h" />
     <ClInclude Include="include\rectangulo.h" />
