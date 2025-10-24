@@ -76,13 +76,13 @@ int main() {
 		std::cout << "---------------------" << std::endl;
 
 		//Ejemplo con sistema de archivos
-		SistemaArchivo* Archivo1 = new SistemaArchivo(); // Crear un sistema de archivos
+		SistemaArchivo* Archivo1 = new SistemaArchivo("Documento final 1"); // Crear un sistema de archivos
 		SistemaArchivo* Archivo2 = new SistemaArchivo(); // Crear otro sistema de archivos
 		SistemaCarpeta* Carpeta = new SistemaCarpeta(); // Crear
-		Carpeta->addElemento(Archivo1); // Agregar el archivo1 a la carpeta
-		Carpeta->addElemento(Archivo2); // Agregar el archivo2 a
+		Carpeta->agregarSistema(Archivo1); // Agregar el archivo1 a la carpeta
+		Carpeta->agregarSistema(Archivo2); // Agregar el archivo2 a
 
-		Carpeta->operacion(); // Llamar a la operacion de la carpeta, que a su vez llamara a la operacion de sus archivos
+		Carpeta->mostrar(); // Llamar a la operacion de la carpeta, que a su vez llamara a la operacion de sus archivos
 		delete Archivo1;	
 		delete Archivo2;
 		delete Carpeta;

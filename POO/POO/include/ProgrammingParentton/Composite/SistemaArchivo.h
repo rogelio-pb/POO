@@ -4,14 +4,17 @@
 #include "ProgrammingParentton/Composite/Archivo.h"
 
 class
-	SistemaArchivo : public Sistema {
+	SistemaArchivo : public Sistema, public Archivo {
 public:// Public section
+	SistemaArchivo(const std::string& _nombre) : nombre(_nombre) {}
 	SistemaArchivo() = default;
 	~SistemaArchivo() = default;
 
 	void
-		operacion() override {
-		std::cout << "Sistema de Archivos:" << std::endl;
-		Sistema::operacion();
+	mostrar() override {
+		Archivo::mostrar();
+		std::cout << "Nombre del Archivo -> " << nombre << std::endl;
 	}
+private:// Private section
+	std::string nombre = "ArchivoSinNombre";
 };

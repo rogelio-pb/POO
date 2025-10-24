@@ -245,5 +245,8 @@
     <ClInclude Include="include\ProgrammingParentton\Composite\SistemaCarpeta.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\Carpeta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
