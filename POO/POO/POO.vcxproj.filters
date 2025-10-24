@@ -37,6 +37,12 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Adapter">
       <UniqueIdentifier>{773140d0-a79b-46af-aa18-395522d2eb75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Decorator">
+      <UniqueIdentifier>{d895b925-782d-4753-a19a-68dd804c633e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{a4447a74-a433-4fde-ae8a-34538699fa5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -199,6 +205,45 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\Adapter\CuadroAdapter.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\Componente.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\ComponenteConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\Decorator.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\DecoratorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\DecoratorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\Cafeteria.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Decorator\Condimento.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\Hoja.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\Composite.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\Archivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\Sistema.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\SistemaArchivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Composite\SistemaCarpeta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

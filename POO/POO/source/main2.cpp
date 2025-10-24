@@ -6,6 +6,14 @@
 #include "ProgrammingParentton/Adapter/CuadroAdapter.h"
 #include "ProgrammingParentton/Adapter/CirculoAdapter.h"
 #include "ProgrammingParentton/Adapter/InterfazDibujable.h"
+#include "ProgrammingParentton/Decorator/ComponenteConcreto.h"
+#include "ProgrammingParentton/Decorator/DecoratorConcretoA.h"
+#include "ProgrammingParentton/Decorator/DecoratorConcretoB.h"
+#include "ProgrammingParentton/Composite/Composite.h"
+#include "ProgrammingParentton/Composite/Hoja.h"
+#include "ProgrammingParentton/Composite/SistemaArchivo.h"
+#include "ProgrammingParentton/Composite/SistemaCarpeta.h"
+
 
 
 
@@ -34,6 +42,54 @@ int main() {
 
 		delete circulo1;
 		delete cuadrado1;
+		delete figura1;
+		delete figura2;
+
+		std::cout << "---------------------" << std::endl;
+
+		//Ejemplo con decorador
+		Componente* objeto = new ComponenteConcreto(); // Crear un componente concreto
+		DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto); // Decorar el componente con DecoratorConcretoA
+		DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA); // Decorar el componente con DecoratorConcretoB
+
+		objeto->operacion(); // Llamar a la operacion del componente original
+		decoradorA->operacion(); // Llamar a la operacion del componente decorado con DecoratorConcretoA
+		decoradorB->operacion(); // Llamar a la operacion del componente decor
+
+		delete objeto;
+		delete decoradorA;
+		delete decoradorB;
+		std::cout << "---------------------" << std::endl;
+
+		//Ejemplo con composite
+		Hoja* hoja1 = new Hoja(); // Crear una hoja
+		Hoja* hoja2 = new Hoja(); // Crear otra hoja
+		Composite* composite1 = new Composite(); // Crear un composite
+
+		composite1->add(hoja1); // Agregar la hoja1 al composite1
+		composite1->add(hoja2); // Agregar la hoja2 al composite
+		composite1->operacion(); // Llamar a la operacion del composite, que a su vez llamara a la operacion de sus hojas
+
+		delete hoja1;
+		delete hoja2;
+		delete composite1;
+		std::cout << "---------------------" << std::endl;
+
+		//Ejemplo con sistema de archivos
+		SistemaArchivo* Archivo1 = new SistemaArchivo(); // Crear un sistema de archivos
+		SistemaArchivo* Archivo2 = new SistemaArchivo(); // Crear otro sistema de archivos
+		SistemaCarpeta* Carpeta = new SistemaCarpeta(); // Crear
+		Carpeta->addElemento(Archivo1); // Agregar el archivo1 a la carpeta
+		Carpeta->addElemento(Archivo2); // Agregar el archivo2 a
+
+		Carpeta->operacion(); // Llamar a la operacion de la carpeta, que a su vez llamara a la operacion de sus archivos
+		delete Archivo1;	
+		delete Archivo2;
+		delete Carpeta;
+		std::cout << "---------------------" << std::endl;
+
+
+
 
 	return 0;
 }
