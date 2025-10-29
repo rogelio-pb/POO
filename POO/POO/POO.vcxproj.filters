@@ -43,6 +43,15 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
       <UniqueIdentifier>{a4447a74-a433-4fde-ae8a-34538699fa5a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Proxy">
+      <UniqueIdentifier>{a2f95007-d1c5-436f-8a97-71a5e5073b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton">
+      <UniqueIdentifier>{ec454b82-eda2-4d25-bca1-596cc7c49d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Observer">
+      <UniqueIdentifier>{e5fe5837-940f-41ff-a38f-367a86da0108}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -247,6 +256,24 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\Composite\Carpeta.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Proxy\Sujeto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Proxy\SujetoReal.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Proxy\Proxy.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Observer\Observer.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Observer\TemperatureSensor.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Observer\DisplayDevice.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

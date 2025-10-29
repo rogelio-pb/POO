@@ -181,6 +181,9 @@
     <ClInclude Include="include\Circulo.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiante.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Observer\DisplayDevice.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Observer\Observer.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Observer\TemperatureSensor.h" />
     <ClInclude Include="include\Inventoryr.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
@@ -234,6 +237,9 @@
     <ClInclude Include="include\ProgrammingParentton\Prototype\DocumentoTexto.h" />
     <ClInclude Include="include\ProgrammingParentton\Prototype\Prototype.h" />
     <ClInclude Include="include\ProgrammingParentton\Prototype\PrototypeConcreto.h" />
+    <ClInclude Include="include\ProgrammingParentton\Proxy\Proxy.h" />
+    <ClInclude Include="include\ProgrammingParentton\Proxy\Sujeto.h" />
+    <ClInclude Include="include\ProgrammingParentton\Proxy\SujetoReal.h" />
     <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />
     <ClInclude Include="include\ProgrammingParentton\Vehiculo.h" />
     <ClInclude Include="include\rectangulo.h" />

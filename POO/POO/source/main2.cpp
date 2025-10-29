@@ -13,7 +13,9 @@
 #include "ProgrammingParentton/Composite/Hoja.h"
 #include "ProgrammingParentton/Composite/SistemaArchivo.h"
 #include "ProgrammingParentton/Composite/SistemaCarpeta.h"
-
+#include "ProgrammingParentton/Proxy/Proxy.h"
+#include"GameProgrammingParentton/Observer/DisplayDevice.h"
+#include"GameProgrammingParentton/Observer/TemperatureSensor.h"
 
 
 
@@ -88,8 +90,19 @@ int main() {
 		delete Carpeta;
 		std::cout << "---------------------" << std::endl;
 
+		//Ejemplo con proxy
+		Proxy* proxy = new Proxy(); // Crear un proxy
+		proxy->request(); // Llamar a la solicitud del proxy, que a su
+		proxy->request(); // Llamar nuevamente para ver el control de acceso
+		delete proxy;
+		std::cout << "---------------------" << std::endl;
 
-
+		//Ejemplo con observer
+		TemperatureSensor sensor;// Crear un sensor de temperatura
+		DisplayDevice display;// Crear un sensor de temperatura y un dispositivo de visualización
+		sensor.addObserver(&display); // Agregar el display como observador del sensor
+		sensor.setTemperature(25); // Cambiar la temperatura del sensor, lo que notific
+		sensor.setTemperature(30); // Cambiar la temperatura del sensor nuevamente
 
 	return 0;
 }
