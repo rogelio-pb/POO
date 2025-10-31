@@ -182,7 +182,9 @@
     <ClInclude Include="include\CuentaBancaria.h" />
     <ClInclude Include="include\Estudiante.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\DisplayDevice.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Observer\MessageApp.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\Observer.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Observer\SoundNoification.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\TemperatureSensor.h" />
     <ClInclude Include="include\Inventoryr.h" />
     <ClInclude Include="include\Item.h" />

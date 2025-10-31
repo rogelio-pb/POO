@@ -16,6 +16,8 @@
 #include "ProgrammingParentton/Proxy/Proxy.h"
 #include"GameProgrammingParentton/Observer/DisplayDevice.h"
 #include"GameProgrammingParentton/Observer/TemperatureSensor.h"
+#include "GameProgrammingParentton/Observer/MessageApp.h"
+#include"GameProgrammingParentton/Observer/SoundNoification.h"
 
 
 
@@ -103,6 +105,12 @@ int main() {
 		sensor.addObserver(&display); // Agregar el display como observador del sensor
 		sensor.setTemperature(25); // Cambiar la temperatura del sensor, lo que notific
 		sensor.setTemperature(30); // Cambiar la temperatura del sensor nuevamente
+		std::cout << "---------------------" << std::endl;
 
+		//Ejemplo con notificaciones de sonido
+		MessageApp messageApp; // Crear una aplicacion de mensajes
+		SoundNotification soundNotification; // Crear una notificacion de sonido
+		messageApp.addObserver(&soundNotification); // Agregar la notificacion de sonido como observador de la aplicacion de mensajes
+		messageApp.setMessage(1); // Establecer un mensaje en la aplicacion,
 	return 0;
 }
