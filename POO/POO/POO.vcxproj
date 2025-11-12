@@ -209,6 +209,8 @@
     <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazDibujable.h" />
     <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazNueva.h" />
     <ClInclude Include="include\ProgrammingParentton\Adapter\InterfazVieja.h" />
+    <ClInclude Include="include\ProgrammingParentton\Bridge\Bridge.h" />
+    <ClInclude Include="include\ProgrammingParentton\Bridge\Dispositivo.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\Builder.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\ConstructorPizza.h" />

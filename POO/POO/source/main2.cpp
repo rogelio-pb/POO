@@ -18,6 +18,8 @@
 #include"GameProgrammingParentton/Observer/TemperatureSensor.h"
 #include "GameProgrammingParentton/Observer/MessageApp.h"
 #include"GameProgrammingParentton/Observer/SoundNoification.h"
+#include "ProgrammingParentton/Bridge/Bridge.h"
+#include "ProgrammingParentton/Bridge/Dispositivo.h"
 
 
 
@@ -112,5 +114,32 @@ int main() {
 		SoundNotification soundNotification; // Crear una notificacion de sonido
 		messageApp.addObserver(&soundNotification); // Agregar la notificacion de sonido como observador de la aplicacion de mensajes
 		messageApp.setMessage(1); // Establecer un mensaje en la aplicacion,
+		std::cout << "---------------------" << std::endl;
+
+
+		std::cout << "	Bridge	" << std::endl;
+		//Ejemplo con bridge
+		ImplementacionConcretaA implA; // Crear una implementacion concreta A
+		ImplementacionConcretaB implB; // Crear una implementacion concreta B
+
+		AbstraccionRefinada abstraccionA(&implA); // Crear una abstraccion refinada con la implementacion A
+		AbstraccionRefinada abstraccionB(&implB); // Crear una abstr
+
+		abstraccionA.operacion(); // Llamar a la operacion de la abstraccion A
+		abstraccionB.operacion(); // Llamar a la operacion de la
+		std::cout << "---------------------" << std::endl;
+
+		//Ejemplo con bridge y dispositivos
+		TV tv;
+		Radio radio;
+		ControlRemotoBasico controTV(&tv);
+		ControlRemotoBasico controRadio(&radio);
+
+		controTV.encender();
+		controTV.apagar();
+
+		controRadio.encender();
+		controRadio.apagar();
+
 	return 0;
 }

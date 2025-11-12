@@ -52,6 +52,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingParentton\Observer">
       <UniqueIdentifier>{e5fe5837-940f-41ff-a38f-367a86da0108}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Bridge">
+      <UniqueIdentifier>{657918ef-4c99-4250-90d4-86a44d0c1e5a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -280,6 +283,12 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingParentton\Observer\SoundNoification.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Bridge\Bridge.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\Bridge\Dispositivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
