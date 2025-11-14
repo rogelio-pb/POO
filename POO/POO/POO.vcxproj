@@ -220,6 +220,10 @@
     <ClInclude Include="include\ProgrammingParentton\Builder\DirectorPizza.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\Pizza.h" />
     <ClInclude Include="include\ProgrammingParentton\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\Manejador.h" />
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoA.h" />
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoB.h" />
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoC.h" />
     <ClInclude Include="include\ProgrammingParentton\Composite\Archivo.h" />
     <ClInclude Include="include\ProgrammingParentton\Composite\Carpeta.h" />
     <ClInclude Include="include\ProgrammingParentton\Composite\Composite.h" />

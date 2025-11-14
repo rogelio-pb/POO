@@ -55,6 +55,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Bridge">
       <UniqueIdentifier>{657918ef-4c99-4250-90d4-86a44d0c1e5a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability">
+      <UniqueIdentifier>{ce3c3736-6eb8-4a1f-acbf-c0fd0c70bb3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -289,6 +292,18 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\Bridge\Dispositivo.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\Manejador.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoC.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
