@@ -249,6 +249,7 @@
     <ClInclude Include="include\ProgrammingParentton\Proxy\Sujeto.h" />
     <ClInclude Include="include\ProgrammingParentton\Proxy\SujetoReal.h" />
     <ClInclude Include="include\ProgrammingParentton\RegistroActividad.h" />
+    <ClInclude Include="include\ProgrammingParentton\SingletonMultiThread\SingletonMultiThread.h" />
     <ClInclude Include="include\ProgrammingParentton\Vehiculo.h" />
     <ClInclude Include="include\rectangulo.h" />
     <ClInclude Include="include\UsuarioBanco.h" />

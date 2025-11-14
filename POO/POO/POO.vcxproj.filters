@@ -58,6 +58,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability">
       <UniqueIdentifier>{ce3c3736-6eb8-4a1f-acbf-c0fd0c70bb3f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\SingletonMultiThread">
+      <UniqueIdentifier>{ff935169-57e0-4649-abba-10ba665cc2f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -304,6 +307,9 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\ChangeOfResponsability\ManejadorConcretoC.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\ChangeOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingParentton\SingletonMultiThread\SingletonMultiThread.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\SingletonMultiThread</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
