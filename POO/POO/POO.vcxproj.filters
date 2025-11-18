@@ -61,6 +61,15 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\SingletonMultiThread">
       <UniqueIdentifier>{ff935169-57e0-4649-abba-10ba665cc2f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Comand">
+      <UniqueIdentifier>{e595dd6c-0cdd-42cd-9ed0-19fb09ee66b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Comand\Invoker">
+      <UniqueIdentifier>{e75983ef-842f-4d97-9d4c-dc6bf8d2fc6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands">
+      <UniqueIdentifier>{64b9ab5f-f853-43b9-97dc-b61847843c1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -310,6 +319,27 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingParentton\SingletonMultiThread\SingletonMultiThread.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\SingletonMultiThread</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\Command.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\Invoker\Luz.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\ComandoEncender.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\ComandoApagar.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\Invoker\ControlRemoto.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\Operacion.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\Suma.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
