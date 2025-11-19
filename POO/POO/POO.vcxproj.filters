@@ -341,5 +341,11 @@
     <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\Suma.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
     </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\Invoker\Calculadora.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\Resta.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
