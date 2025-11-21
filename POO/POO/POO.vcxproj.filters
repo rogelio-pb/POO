@@ -73,6 +73,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingParentton\Flyweith">
       <UniqueIdentifier>{7ace9d0b-4f90-4e56-a4a4-12313a192d33}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\State">
+      <UniqueIdentifier>{ad635354-5ce1-478c-87b9-ede5b9f07450}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -358,6 +361,21 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingParentton\Flyweith\FlyweigthFactory.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\Flyweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\State\PlayerState.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\State\NormalState.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\State\HurtState.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\State\RagueState.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\State\Player.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

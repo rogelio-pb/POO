@@ -198,6 +198,11 @@
     <ClInclude Include="include\GameProgrammingParentton\Observer\Observer.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\SoundNoification.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\TemperatureSensor.h" />
+    <ClInclude Include="include\GameProgrammingParentton\State\HurtState.h" />
+    <ClInclude Include="include\GameProgrammingParentton\State\NormalState.h" />
+    <ClInclude Include="include\GameProgrammingParentton\State\Player.h" />
+    <ClInclude Include="include\GameProgrammingParentton\State\PlayerState.h" />
+    <ClInclude Include="include\GameProgrammingParentton\State\RagueState.h" />
     <ClInclude Include="include\Inventoryr.h" />
     <ClInclude Include="include\Item.h" />
     <ClInclude Include="include\Prerequisites.h" />
