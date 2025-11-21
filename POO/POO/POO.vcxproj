@@ -190,6 +190,9 @@
     <ClInclude Include="include\GameProgrammingParentton\Comand\Invoker\ControlRemoto.h" />
     <ClInclude Include="include\GameProgrammingParentton\Comand\Invoker\Luz.h" />
     <ClInclude Include="include\GameProgrammingParentton\Comand\Operacion.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\ConcretFlyweith.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\FlyweigthFactory.h" />
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\Flyweith.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\DisplayDevice.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\MessageApp.h" />
     <ClInclude Include="include\GameProgrammingParentton\Observer\Observer.h" />

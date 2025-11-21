@@ -70,6 +70,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands">
       <UniqueIdentifier>{64b9ab5f-f853-43b9-97dc-b61847843c1e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Flyweith">
+      <UniqueIdentifier>{7ace9d0b-4f90-4e56-a4a4-12313a192d33}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -346,6 +349,15 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingParentton\Comand\ConcreteCommads\Resta.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\Comand\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\Flyweith.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Flyweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\ConcretFlyweith.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Flyweith</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Flyweith\FlyweigthFactory.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Flyweith</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
