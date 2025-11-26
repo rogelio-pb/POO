@@ -76,6 +76,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingParentton\State">
       <UniqueIdentifier>{ad635354-5ce1-478c-87b9-ede5b9f07450}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Strategy">
+      <UniqueIdentifier>{e682d052-70e8-4b43-a5ec-0e11ab11104a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -376,6 +379,21 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingParentton\State\Player.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Strategy\IAttackStrategy.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Strategy\RangedAttackStrategy.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Strategy\MaleeAttackStrategy.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Strategy\Player.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Strategy\MagicAttackStrategy.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

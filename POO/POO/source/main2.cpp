@@ -1,32 +1,24 @@
 #include "Prerequisites.h"
-#include "GameProgrammingParentton/State/Player.h"
-#include "GameProgrammingParentton/State/NormalState.h"
-#include "GameProgrammingParentton/State/HurtState.h"
-#include "GameProgrammingParentton/State/RagueState.h"
-
-
-
-
+#include "GameProgrammingParentton/Strategy/Player.h"
+#include "GameProgrammingParentton/Strategy/MaleeAttackStrategy.h"
+#include "GameProgrammingParentton/Strategy/RangedAttackStrategy.h"
+#include "GameProgrammingParentton/Strategy/MagicAttackStrategy.h"
 
 
 int main() {
-	Player* player = new Player();
-	player->atack();
-	player->defend();
-	player->move();
-	std::cout << "Player gets hurt" << std::endl;
-	player->setState(new HurtState());//cambio de estado a HurtState
-	player->atack();
-	player->defend();
-	player->move();
-	std::cout << "Player becomes rage" << std::endl;
-	player->setState(new RagueState());//cambio de estado a RagueState
-	player->atack();
-	player->defend();
-	player->move();
-	delete player;
-
-
+	Player player;
+	//usamos estrategia de ataque cuerpo a cuerpo
+	player.SetStrategy(std::make_unique<MaleeAttackStrategy>());
+	int damage = player.Attack(50);
+	std::cout << "Cuerpo a cuerpo daño: " << damage << std::endl;
+	//cambiamos a estrategia de ataque a distancia
+	player.SetStrategy(std::make_unique<RangedAttackStrategy>());
+	damage = player.Attack(50);
+	std::cout << "Ataque a distancia daño: " << damage << std::endl;
+	//cambiamos a estrategia de ataque magico
+	player.SetStrategy(std::make_unique<MagicAttackStrategy>());
+	damage = player.Attack(50);
+	std::cout << "Ataque mágico daño: " << damage << std::endl;
 
 	return 0;
 }
