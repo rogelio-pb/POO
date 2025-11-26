@@ -1,24 +1,14 @@
 #include "Prerequisites.h"
-#include "GameProgrammingParentton/Strategy/Player.h"
-#include "GameProgrammingParentton/Strategy/MaleeAttackStrategy.h"
-#include "GameProgrammingParentton/Strategy/RangedAttackStrategy.h"
-#include "GameProgrammingParentton/Strategy/MagicAttackStrategy.h"
-
+#include "GameProgrammingParentton/Facade/AudioFacade.h"
 
 int main() {
-	Player player;
-	//usamos estrategia de ataque cuerpo a cuerpo
-	player.SetStrategy(std::make_unique<MaleeAttackStrategy>());
-	int damage = player.Attack(50);
-	std::cout << "Cuerpo a cuerpo daño: " << damage << std::endl;
-	//cambiamos a estrategia de ataque a distancia
-	player.SetStrategy(std::make_unique<RangedAttackStrategy>());
-	damage = player.Attack(50);
-	std::cout << "Ataque a distancia daño: " << damage << std::endl;
-	//cambiamos a estrategia de ataque magico
-	player.SetStrategy(std::make_unique<MagicAttackStrategy>());
-	damage = player.Attack(50);
-	std::cout << "Ataque mágico daño: " << damage << std::endl;
+	AudioFacade audio;
+
+	audio.initialize();
+	audio.playBackgroundMusic("assets/music/background.mp3");
+	audio.playSfx("assets/sfx/jump.wav");
+	audio.setMasterVolume(0.5f);
+	audio.enableRaverb(false);
 
 	return 0;
 }

@@ -79,6 +79,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingParentton\Strategy">
       <UniqueIdentifier>{e682d052-70e8-4b43-a5ec-0e11ab11104a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingParentton\Facade">
+      <UniqueIdentifier>{152c08ae-d9bb-4fb8-8842-bbecd8c40e59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main2.cpp">
@@ -394,6 +397,18 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingParentton\Strategy\MagicAttackStrategy.h">
       <Filter>Archivos de encabezado\GameProgrammingParentton\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Facade\AudioLoader.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Facade\AudioMixer.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Facade\AudioEffectsProcesador.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Facade</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingParentton\Facade\AudioFacade.h">
+      <Filter>Archivos de encabezado\GameProgrammingParentton\Facade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
